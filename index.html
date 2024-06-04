@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kopi Sangah Asli Barokah</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * * {
+            box-sizing: border-box;
+        }
+
+        #bungkus {
+            font-family: Montserrat, sans-serif;
+            line-height: 20px;
+            margin: auto;
+            width: 70%;
+            box-shadow: 6px 6px 5px 10px #666666;
+        }
+
+        header {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px rgb(187, 187, 245);
+            padding: 50px;
+            text-align: center;
+            background: #4a448a;
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            border: 1px dotted;
+            background-color: #e5f50d;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav li {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: pink;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        p {
+            text-indent: 50px;
+        }
+
+        p::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(66, 31, 5);
+        }
+
+        .dropdown {
+            display: inline-block;
+            color: white;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #888888;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #content {
+            text-align: justify;
+            flex: 7;
+            order: 1;
+            background-color: white;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 3;
+            order: 2;
+            background-color: white;
+            padding: 20px;
+            border: solid;
+            border-radius: 10px 5px 10px 5px;
+        }
+
+        article {
+            width: 100%;
+            border: 4px solid black;
+            padding: 10px;
+            border: 4px solid black;
+            overflow: auto;
+        }
+
+        img {
+            float: left;
+            margin: 10px;
+            background-color: rgb(109, 139, 248);
+            width: 60%;
+            height: 60%;
+            padding: 2px;
+
+        }
+
+        .imagep {
+            width: 290px;
+            height: 320px;
+            text-align: center;
+            margin: 0px auto;
+            display: block;
+        }
+
+        footer {
+            padding: 20px;
+            color: white;
+            background-color: #00a2c6;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 600px) {
+            #bungkus {
+                width: 100%;
+            }
+
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bungkus">
+        <header>
+            <h1>Kopi Sangah Asli Barokah</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#varian">Varian</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li>
+                    <div class="dropdown">
+                        Menu
+                        <div class="dropdown-content">
+                            <a href="#profile">Profile</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="content">
+                <section>
+                    <article>
+                        <h3 id="sejarah">SEJARAH</h3>
+                        <img src="sejarah.jpeg" alt="sejarah">
+                        <p>Kopi Sangah Asli Barokah didirikan pada tahun 2017 di Desa Rempek Darussalam, Kecamatan Gangga, Kabupaten
+                            Lombok Utara. Kopi ini dikenal dengan kualitasnya yang tinggi dan proses pengolahan yang
+                            tetap mempertahankan metode tradisional. Hal ini menjadikan Kopi Barokah salah satu kopi
+                            favorit di daerah tersebut. Setiap biji kopi robusta pilihan dipanen langsung dari Bukit
+                            Rempek Darussalam dan diolah dengan hati-hati untuk menjaga cita rasa yang khas dan
+                            autentik.</p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section>
+                    <article>
+                        <h3 id="varian">VARIAN</h3>
+                        <img src="kopi.jpeg" alt="varian">
+                        <p>Yuk, kepoin lagi supaya Anda tidak penasaran! Kopi Sangah Barokah menawarkan berbagai varian
+                            ukuran yang bisa Anda pilih sesuai kebutuhan dan selera. Mulai dari kemasan kecil hingga
+                            kemasan besar yang cocok untuk stok di rumah. Berikut beberapa varian gram yang tersedia:
+                        <ul>
+                            <li>100 gram</li>
+                            <li>300 gram</li>
+                            <li>500 gram</li>
+                        </ul>
+                        Kopi Sangah Asli Barokah menggunakan biji kopi robusta pilihan yang langsung dipanen dari Bukit
+                        Rempek Darussalam, Gangga, Lombok Utara. Biji kopi ini diolah secara tradisional untuk menjaga
+                        cita rasanya yang khas
+                        dan autentik. Proses tradisional ini memastikan setiap cangkir kopi memiliki aroma yang harum
+                        dan rasa yang kuat, mencerminkan kualitas terbaik dari Kopi Sangah Barokah.
+
+                        Dengan berbagai varian ukuran yang tersedia, Anda dapat menikmati kopi berkualitas ini kapan
+                        saja dan di mana saja. Yuk, pilih ukuran yang pas untuk Anda dan nikmati kelezatan Kopi Sangah
+                        Asli
+                        Barokah!
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section>
+                    <article>
+                        <h3 id="lokasi">LOKASI</h3>
+                        <img src="Lokasi.jpeg" alt="lokasi">
+                        <p>Kopi Sangah Asli Barokah beralamat di <i>+5GF, Unnamed Road, Rempek, Kec. Gangga, Kabupaten
+                                Lombok Utara, Nusa Tenggara Bar. 83353.</i> Tempat ini mudah diakses dan menjadi
+                            destinasi yang menarik bagi para pecinta kopi.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Luas</td>
+                                <td>:</td>
+                                <td>1 H</td>
+                            </tr>
+                            <tr>
+                                <td>Location</td>
+                                <td>:</td>
+                                <td>Rempek Darusalam</td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kopi</td>
+                                <td>:</td>
+                                <td>Robusta (malangsari)</td>
+                            </tr>
+                            <tr>
+                                <td>Wisata</td>
+                                <td>:</td>
+                                <td>Wisata Kopi</td>
+                            </tr>
+                            <tr>
+                                <td>Provinsi</td>
+                                <td>:</td>
+                                <td>Nusa Tenggara Barat</td>
+                            </tr>
+                            <tr>
+                                <td>Gugusan pulau</td>
+                                <td>:</td>
+                                <td>Dayan Gunung</td>
+                            </tr>
+                        </table>
+                    </article>
+                </section>
+            </div>
+            <aside>
+                <h3 id="profile">PROFILE DATA PRIBADI</h3>
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <center><img src="Azman.jpeg" alt="profile" class="imagep"></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Mhammad Nurul Azman</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td>Rempek darussalam, gangga, KLU</td>
+                    </tr>
+                    <tr>
+                        <td>TTL</td>
+                        <td>:</td>
+                        <td>15 Maret 2003</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>:</td>
+                        <td>Belum Kawin</td>
+                    </tr>
+                </table>
+            </aside>
+        </main>
+        <footer>
+            <h2>@Tugas Perancangan Web</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
